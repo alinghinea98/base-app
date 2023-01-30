@@ -1,0 +1,42 @@
+:host {
+    box-shadow: 1px 1px 1px #999; 
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: .5em;
+    align-items: center;
+    height: 80px;
+    img {
+        width: 200px;
+        object-fit: contain;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        list-style: none;
+        text-align: center;
+        
+        li {
+            font-size: 1.2em;
+            color: #666763;
+        }
+        li:hover {
+            cursor: pointer;
+            color: black;
+            transform: scale(1.1);
+        }
+    }
+    button {
+        background: #83c4fe;
+        color: white;
+        font-size: 1.2em;
+    }
+}

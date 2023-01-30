@@ -1,0 +1,29 @@
+main {
+    height: calc(100% - 240px);
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    div {
+        position: absolute;
+        top: 170px;
+        right: 200px;
+        text-align: center;
+        h1 {
+            font-size: 5em;
+            color: #746b6b;
+        }
+        h2 {
+            font-size: 2.2em;
+            color: #746b6b;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: #746b6b;
+            text-align: start;
+        }
+    }
+}

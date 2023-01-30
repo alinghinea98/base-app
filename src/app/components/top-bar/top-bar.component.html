@@ -1,0 +1,12 @@
+<nav>
+    <img src="../../../assets/images/logo.png"/>
+    <section>
+        <ul>
+            <li routerLink="/dashboard">Home</li>
+            <li (click)="goTo('https://www.kronsoft.ro/about-us')">About us</li>
+            <li (click)="goTo('https://www.kronsoft.ro/contact')">Contact</li>
+        </ul>
+        <button *ngIf="isDashboard" mat-raised-button routerLink="/medicine">Open medicine list</button>
+        <button *ngIf="!isDashboard" mat-raised-button (click)="addNewEntry()">Add new entry</button>
+    </section>
+</nav>
